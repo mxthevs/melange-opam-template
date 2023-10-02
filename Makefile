@@ -34,6 +34,10 @@ build: ## Build the project
 build_verbose: ## Build the project
 	$(DUNE) build --verbose @react @node
 
+.PHONY: dev
+dev: ## Start the development server
+	npm run dev
+
 .PHONY: serve
 serve: ## Serve the application with a local HTTP server
 	npm run serve
